@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadpoolsite</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <!-- BOOTSTRAP -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACION -->
+    <header id="encabezadoIndex" class="container-fluid animate__animated animate__flipInX">
+        <nav class="navbar navbar-expand-lg navbar-dark col-12">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand logoBarra" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+                <div class="collapse navbar-collapse botonesBarra" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/multimedia.html">Multimedia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?"
+                            aria-label="Search">
+                        <button class="btn botones" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECCIONES DEL SITIO -->
+    <div id="carouselExampleControls" class="carousel slide container-fluid mt-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/cover1.jpg" class="d-block w-100" alt="imagen cover">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/cover2.PNG" class="d-block w-100" alt="imagen cover">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/cover3.jpg" class="d-block w-100" alt="imagen cover">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main class="mt-3">
+        <h1>Deadpoolsite</h1>
+        <h2>Nosotros</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, repellat commodi voluptates provident
+            assumenda animi quos nesciunt porro nihil molestiae obcaecati numquam eum debitis fugiat sed ut facere autem
+            illo fugit voluptas, unde dolorem magnam tenetur. Aliquid adipisci beatae deleniti eum sunt dolore
+            accusantium dicta repudiandae similique quo magni, ut fugit, officiis a amet veritatis voluptatem dolorum
+            inventore aperiam tenetur rem nesciunt saepe consequuntur quae? Aliquid facilis, exercitationem quas odit at
+            dolorum beatae, saepe a modi temporibus corrupti ratione, incidunt nam quae molestiae culpa. Autem optio,
+            odio hic id eligendi nesciunt fugiat reiciendis praesentium? Dolore ullam illo sed ea quasi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed possimus non dolor rem quaerat. Dolorum quod
+            ratione in expedita non dolorem eveniet numquam odio sit, assumenda ipsum odit distinctio eaque aliquam,
+            veniam reprehenderit laborum iure magnam optio! Voluptates perferendis dignissimos voluptas minus nesciunt,
+            nobis distinctio veniam libero tempora unde magnam enim maiores. Quasi dolorum sunt iusto ab unde doloremque
+            dolorem perferendis quas, illo porro? In expedita aut atque eius illum eaque architecto optio, corporis est
+            velit ad earum quos tempora.</p>
+    </main>
+
+    <div class="row container-fluid mt-3">
+        <div class="col-md-6 col-sm-12 seccionVideo">
+            <div class="textoVideo">
+                <h2>Video</h2>
+            </div>
+            <iframe class="container-fluid" width="500" height="315" src="https://www.youtube.com/embed/bbKL6tWI49M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6 col-sm-12 seccionUbi">
+            <div class="textoUbi">
+                <h2>Ubicaciones</h2>
+                <a href="./pages/locales.html">
+                    <h2>Ver Locales</h2>
+                </a>
+            </div>
+            <iframe class="container-fluid" width="500" height="315"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13116.599148676192!2d-58.58868040000001!3d-34.7266186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1658185430351!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <section class="algunosProductos mt-5">
+        <div class="textoProducto">
+            <h2>Algunos Productos</h2>
+            <a href="pages/tienda.html">
+                <h2>Ver Mas</h2>
+            </a>
+        </div>
+        <div class="row px-5 my-3 container-fluid">
+            <div class="card col-lg-3 col-md-6 col-sm-12 itemT text-center">
+                <img src="./img/comic1.jpg" class="card-img-top pt-3 img-fluid" alt="imagen de comic">
+                <div class="card-body">
+                    <h5 class="card-title">Comic</h5>
+                    <p class="card-text">$1500</p>
+                    <a href="#" class="btn botones">Comprar</a>
+                    <a href="#" class="btn botones">Añadir</a>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-12 itemT text-center">
+                <img src="./img/comic1.jpg" class="card-img-top pt-3 img-fluid" alt="imagen de comic">
+                <div class="card-body">
+                    <h5 class="card-title">Comic</h5>
+                    <p class="card-text">$1500</p>
+                    <a href="#" class="btn botones">Comprar</a>
+                    <a href="#" class="btn botones">Añadir</a>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-12 itemT text-center">
+                <img src="./img/comic1.jpg" class="card-img-top pt-3 img-fluid" alt="imagen de comic">
+                <div class="card-body">
+                    <h5 class="card-title">Comic</h5>
+                    <p class="card-text">$1500</p>
+                    <a href="#" class="btn botones">Comprar</a>
+                    <a href="#" class="btn botones">Añadir</a>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-12 itemT text-center">
+                <img src="./img/comic1.jpg" class="card-img-top pt-3 img-fluid" alt="imagen de comic">
+                <div class="card-body">
+                    <h5 class="card-title">Comic</h5>
+                    <p class="card-text">$1500</p>
+                    <a href="#" class="btn botones">Comprar</a>
+                    <a href="#" class="btn botones">Añadir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <div class="listaPie">
+            <div class="logoPie">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div>
+                <h3>Nosotros</h3>
+            </div>
+            <nav class="logoRedes">
+                <h3>RRSS</h3>
+                <ul>
+                    <li><a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="img/logowp.png"
+                                alt="Whatsapp"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="img/logoig.png"
+                                alt="Instagram"></a></li>
+                    <li><a href="https://es-la.facebook.com/" target="_blank"><img src="img/logofb.png"
+                                alt="Facebook"></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><img src="img/logoyt.png" alt="YouTube"></a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <h3><a href="./pages/contacto.html">Contacto</a></h3>
+            </div>
+            <div>
+                <a href="#encabezadoIndex">
+                    <h3>Subir</h3>
+                </a>
+            </div>
+        </div>
+        <p class="frasePie">Tienda ficticia creada por <strong>Fabian Durand</strong>.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
