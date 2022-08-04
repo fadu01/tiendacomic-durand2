@@ -1,0 +1,29 @@
+header {
+    background: radial-gradient(#DF2935, black);
+
+    .logoBarra {
+        img {
+            width: 100px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .botonesBarra {
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            li {
+                a {
+                    font-weight: bold;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    color: antiquewhite;
+                }
+            }
+        }
+    }
+}

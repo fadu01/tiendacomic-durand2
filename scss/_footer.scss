@@ -1,0 +1,38 @@
+footer {
+    background-color: #DF2935;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+
+    .listaPie {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 5px;
+
+        .logoPie {
+            img {
+                width: 40px;
+            }
+        }
+
+        .logoRedes {
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                gap: 10px;
+
+                li {
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
