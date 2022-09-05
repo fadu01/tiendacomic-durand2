@@ -1,1 +1,6 @@
 $color-primario: #DF2935;
+
+@mixin titulos($colortext, $size) {
+    color: $colortext;
+    font-size: $size;
+}

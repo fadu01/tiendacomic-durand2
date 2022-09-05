@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
+@font-face {
+    font-family: 'Rogue Hero';
+    src: url(../font/rogueheroacad.ttf);
+}
 html {
     font-size: 62.5%;
 }
@@ -7,32 +10,42 @@ html {
 body {
     font-family: 'Varela Round', sans-serif;
     color: black;
+
+    h1, h2, h3 {
+        font-family: 'Rogue Hero';
+    }
     ul {
         list-style-type: none;
     }
     a {
+        font-family: 'Rogue Hero';
         text-decoration: none;
         color: black;
+        &:hover {
+            color: #9A031E;
+        }
     }
 
     .botones {
         background-color: $color-primario;
         color: white;
-    }
-    .botones:hover {
-        background-color: #9A031E;
-        color: white;
-        border: #9A031E solid 1px;
+
+        &:hover {
+            background-color: #9A031E;
+            color: white;
+            border: #9A031E solid 1px;
+        }
     }
 
     .itemT {
         border: white solid 1px;
-        gap: 10px;
+        gap: 5px;
         text-align: center;
         padding: 5px;
+
+        &:hover {
+            border: #DF2935 1px solid;
+        }
     }
-    
-    .itemT:hover {
-        border: #DF2935 1px solid;
-    }
+
 }

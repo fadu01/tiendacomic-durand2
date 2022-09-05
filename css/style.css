@@ -1,29 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@font-face {
+  font-family: 'Rogue Hero';
+  src: url(../font/rogueheroacad.ttf); }
+
 html {
   font-size: 62.5%; }
 
 body {
   font-family: 'Varela Round', sans-serif;
   color: black; }
+  body h1, body h2, body h3 {
+    font-family: 'Rogue Hero'; }
   body ul {
     list-style-type: none; }
   body a {
+    font-family: 'Rogue Hero';
     text-decoration: none;
     color: black; }
+    body a:hover {
+      color: #9A031E; }
   body .botones {
     background-color: #DF2935;
     color: white; }
-  body .botones:hover {
-    background-color: #9A031E;
-    color: white;
-    border: #9A031E solid 1px; }
+    body .botones:hover {
+      background-color: #9A031E;
+      color: white;
+      border: #9A031E solid 1px; }
   body .itemT {
     border: white solid 1px;
-    gap: 10px;
+    gap: 5px;
     text-align: center;
     padding: 5px; }
-  body .itemT:hover {
-    border: #DF2935 1px solid; }
+    body .itemT:hover {
+      border: #DF2935 1px solid; }
 
 header {
   background: radial-gradient(#DF2935, black); }
@@ -37,9 +46,7 @@ header {
     flex-wrap: wrap;
     gap: 20px; }
     header .botonesBarra ul li a {
-      font-weight: bold;
       font-size: 2rem;
-      text-transform: uppercase;
       color: antiquewhite; }
 
 footer {
@@ -57,14 +64,20 @@ footer {
     margin-top: 5px; }
     footer .listaPie .logoPie img {
       width: 40px; }
-    footer .listaPie .logoRedes ul {
+    footer .listaPie .logoRedes {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-      gap: 10px; }
-      footer .listaPie .logoRedes ul li img {
-        width: 30px; }
+      text-align: center; }
+      footer .listaPie .logoRedes ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        gap: 10px; }
+        footer .listaPie .logoRedes ul li img {
+          width: 30px; }
 
 main {
   width: 100%;
@@ -72,12 +85,24 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; }
+  gap: 10px;
+  background: url(../img/fondo.png);
+  background-size: 85px;
+  /* Locales */
+  /* Contacto */ }
   main p {
     width: 90%;
     margin-left: 20px;
     margin-right: 20px;
     text-align: center; }
+  main .estiloParrafo, main .estiloParrafoDos {
+    color: white;
+    background-color: #DF2935;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #9A031E; }
+  main .estiloTitulos {
+    color: #DF2935;
+    font-size: 5rem; }
   main .zonas {
     display: flex;
     flex-wrap: wrap;
@@ -95,46 +120,60 @@ main {
     margin-bottom: 20px; }
     main .seccionMapaLocales iframe {
       width: 90%; }
-
-.cajaVideoMapa .seccionVideo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 5px; }
-
-.cajaVideoMapa .seccionUbi {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 5px; }
-  .cajaVideoMapa .seccionUbi .textoUbi {
+  main .formulariosContacto {
+    text-align: center; }
+    main .formulariosContacto form {
+      background-color: white;
+      text-align: start;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 10px #9A031E; }
+      main .formulariosContacto form .checkTilde:checked {
+        background-color: #DF2935;
+        border: #DF2935;
+        box-shadow: 1px 1px 5px #DF2935; }
+  main aside .caruselNoticia .seccionVideo {
     display: flex;
-    flex-direction: row;
-    gap: 20px; }
-
-.algunosProductos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px; }
-  .algunosProductos .textoProducto {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px; }
+  main aside .caruselNoticia .seccionTexto {
+    background-color: #f3666f;
+    border-radius: 10px; }
+  main .seccionUbi {
     display: flex;
-    gap: 20px; }
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px; }
+    main .seccionUbi .textoUbi {
+      display: flex;
+      flex-direction: row;
+      gap: 20px; }
+  main .algunosProductos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px; }
+    main .algunosProductos .cajaProductos {
+      justify-content: space-around; }
+    main .algunosProductos .textoProducto {
+      display: flex;
+      gap: 20px; }
 
 /* Media Query */
 @media (max-width: 767px) {
   .seccionUbi {
     margin-top: 2rem; }
-  .botonesBarra ul {
-    display: flex;
-    flex-direction: column; }
-  .listaPie {
+  header .botonesBarra ul {
     display: flex;
     flex-direction: column;
-    align-content: center; }
-  .logoRedes ul {
-    align-content: space-between;
-    gap: 5px; } }
+    gap: 3px; }
+  footer .listaPie {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .listaPie .logoRedes ul {
+      justify-content: center; } }

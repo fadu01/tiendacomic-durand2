@@ -5,6 +5,8 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    background: url(../img/fondo.png);
+    background-size: 85px;
 
     p {
         width: 90%;
@@ -13,7 +15,22 @@ main {
         text-align: center;
     }
 
-    // Locales
+    .estiloParrafo {
+        color: white;
+        background-color: #DF2935;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px #9A031E;
+    }
+
+    .estiloParrafoDos {
+        @extend .estiloParrafo;
+    }
+
+    .estiloTitulos {
+        @include titulos($color-primario, 5rem);
+    }
+
+    /* Locales */
     .zonas {
         display: flex;
         flex-wrap: wrap;
@@ -41,17 +58,43 @@ main {
         }
     
     }
-}
 
-.cajaVideoMapa {
-    .seccionVideo {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 5px;
-    }
+    /* Contacto */
+    .formulariosContacto {
+        text-align: center;
+
+        form {
+            background-color: white;
+            text-align: start;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px #9A031E;
     
+            .checkTilde:checked {
+                background-color: #DF2935;
+                border: #DF2935;
+                box-shadow: 1px 1px 5px #DF2935;
+            }
+        }
+    }
+
+    aside {
+        .caruselNoticia {
+            .seccionVideo {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 5px;
+            }
+            
+            .seccionTexto {
+                background-color: #f3666f;
+                border-radius: 10px;
+            }
+        }
+    }
+
     .seccionUbi {
         display: flex;
         flex-direction: column;
@@ -65,40 +108,20 @@ main {
             gap: 20px;
         }
     }
-}
 
-.algunosProductos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-
-    .textoProducto {
-        display: flex;
-        gap: 20px;
-    }
-}
-
-/* Media Query */
-@media (max-width: 767px) {
-    .seccionUbi {
-        margin-top: 2rem;
-    }
-
-    .botonesBarra ul {
+    .algunosProductos {
         display: flex;
         flex-direction: column;
-    }
-
-    .listaPie {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-
-    .logoRedes ul {
-        align-content: space-between;
-        gap: 5px;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        .cajaProductos {
+            justify-content: space-around;
+        }
+    
+        .textoProducto {
+            display: flex;
+            gap: 20px;
+        }
     }
 }

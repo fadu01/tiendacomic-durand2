@@ -1,0 +1,29 @@
+/* Media Query */
+@media (max-width: 767px) {
+    .seccionUbi {
+        margin-top: 2rem;
+    }
+
+    header {
+        .botonesBarra {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+            }
+        }
+    }
+
+    footer {
+        .listaPie {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .logoRedes {
+                ul {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

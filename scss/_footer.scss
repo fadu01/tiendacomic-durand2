@@ -20,11 +20,16 @@ footer {
         }
 
         .logoRedes {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: center;
             ul {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: space-evenly;
+                justify-content: space-around;
+                align-content: center;
                 gap: 10px;
 
                 li {
